@@ -78,10 +78,17 @@ export default function IndexPage() {
         <StyledBox2>
           <img src="/img/bitmoji_chris.png" />
           <StyledHeader>Chris Abrams</StyledHeader>
+          <P>Originated from a small east Texas town, Texas A&amp;M alum, father of two. Day job is crypto, night job is Unity.</P>
+        </StyledBox2>
+        <StyledBox2>
+          <img src="/img/bitmoji_salwa.png" />
+          <StyledHeader>Salwa Mohammed</StyledHeader>
+          <P>Born in Kuwait, graduated from Denver and have been teaching Math for countless years. I thrive on challenges and love to learn.</P>
         </StyledBox2>
         <StyledBox2>
           <img src="/img/headshot_james.png" />
           <StyledHeader>James Burns</StyledHeader>
+          <P>Journeying from a small rural community in Appalachia. From door-to-door sales in high school, to a Fortune 500 industrial company, to my current software studies- I've been aggressively pursuing the American Dream.</P>
         </StyledBox2>
       </StyledBox>
 

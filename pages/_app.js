@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }) {
         <meta name="keywords" content="jelly, dragon, game" />
         <meta name="author" content="Jelly Dragon Team" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="content-language" content="en-us" />
+        <meta httpEquiv="content-language" content="en-us" />
 
         <meta property="og:locale" content="en" />
       </Head>
