@@ -29,14 +29,14 @@ const StyledHeroOverlay = styled.div`
 const StyledImg = styled.img`
   display: flex;
   flex: 1 1 100%;
+  height: 600px;
   max-width: 100%;
   min-width: 100%;
 `
 
-const StyledHeroH1 = styled(StyledH1)`
-  color: #fff;
+const StyledContent = styled(StyledH1)`
   display: flex;
-  font-size: 38px;
+  flex-wrap: wrap;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -45,20 +45,36 @@ const StyledHeroH1 = styled(StyledH1)`
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
+`
+
+const StyledHeroH1 = styled(StyledH1)`
+  color: #fff;
+  display: flex;
+  font-size: 38px;
 
   @media only screen and ${breakpoints.device.sm} {
     font-size: 72px;
   }
 `
 
-export default function HeroSection({ alt, filename, header }) {
+const StyledButton = styled.a`
+  background-color: #ff5f5f;
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  padding: 8px 16px;
+`
 
+export default function HeroSection({ alt, filename, header }) {
   const src = `/img/${filename}`
 
   return (
     <StyledHeroSection>
       <StyledHeroOverlay aria-hidden="true" />
-      <StyledHeroH1>{header}</StyledHeroH1>
+      <StyledContent>
+        <StyledButton href="https://jamesburnsbacon.itch.io/jelly-dragon" target="_new">Play Game</StyledButton>
+      </StyledContent>
+      
       <StyledImg alt={alt} src={src} />
     </StyledHeroSection>
   )
