@@ -70,6 +70,9 @@ export default function IndexPage() {
       
       <HeroSection alt="Game Pic" filename="screenshot_01.png" header="Jelly Dragon" />
 
+      <P2>Jiggle Your Childhood Adventure Fantasies- Playing Jelly Dragon!</P2>
+      <P2>May 12th, 2022- Cambridge, MA</P2>
+      <P2>ABM games is pleased to serve you with “Jelly Dragon”-a web game for PC. Can you eat your way to the top? Maybe not IRL, but here you can! Fight, Jump, and Climb up the Jelly Dragon's tower using your sticky, sweet powers! Ah. Reminds me of my preschool days. Peaked back then. We all did. Nom on grumpy jellies as you ascend to yummy victory! Wisdom says to love your enemies, but punching their faces off their bodies then eating them to gain their power- that's fun too! JIGGLE FISTICUFFS WITH THE JELLY DRAGON HIMSELF! Can you jiggle harder, faster, stronger than the most fearsome creature to be found for the next 720  pixels? ABM games is an independent developer of quick and jolly online games.</P2>
       <P2>Can you eat your way to the top? Fight, Jump, and Climb up the Jelly Dragon's tower using your sticky, sweet powers! Nom on grumpy jellies as you ascend to yummy victory!</P2>
 
       <StyledBox>
