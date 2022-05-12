@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const StyledP = styled.p`
+export const StyledP = styled.p`
   display: flex;
   flex: 1 1 100%;
   line-height: 2;

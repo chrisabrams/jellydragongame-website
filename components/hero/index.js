@@ -36,7 +36,7 @@ const StyledImg = styled.img`
 
 const StyledContent = styled(StyledH1)`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -62,7 +62,13 @@ const StyledButton = styled.a`
   border-radius: 6px;
   color: #fff;
   display: flex;
+  justify-content: center;
   padding: 8px 16px;
+`
+
+const StyledButton2 = styled(StyledButton)`
+  background-color: #202020;
+  margin-top: 16px;
 `
 
 export default function HeroSection({ alt, filename, header }) {
@@ -73,6 +79,7 @@ export default function HeroSection({ alt, filename, header }) {
       <StyledHeroOverlay aria-hidden="true" />
       <StyledContent>
         <StyledButton href="https://jamesburnsbacon.itch.io/jelly-dragon" target="_new">Play Game</StyledButton>
+        <StyledButton2 href="https://youtu.be/iYogLp4mN4c" target="_new">View Trailer</StyledButton2>
       </StyledContent>
       
       <StyledImg alt={alt} src={src} />

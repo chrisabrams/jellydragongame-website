@@ -5,13 +5,20 @@ import HeroSection from '../components/hero'
 import Link from 'next/link'
 import List from '../components/list'
 import ListItem from '../components/list/item'
-import P from '../components/typography/p'
+import P, { StyledP } from '../components/typography/p'
 import React from 'react'
 import styled from 'styled-components'
+
+const StyledH1 = styled.h1`
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+`
 
 const StyledBox = styled.div`
   display: flex;
   flex: 1 1 100%;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 32px;
 
@@ -21,15 +28,16 @@ const StyledBox = styled.div`
 `
 
 const StyledBox2 = styled(StyledBox)`
-  flex-wrap: wrap;
-  width: 200px;
-  max-width: 200px;
+  margin-right: 32px;
+  width: 210px;
+  max-width: 210px;
 
   img {
     display: flex;
     flex: 1 1 100%;
-    width: 200px;
-    max-width: 200px;
+
+    width: 210px;
+    max-width: 210px;
   }
 
   h3 {
@@ -42,6 +50,11 @@ const StyledBox2 = styled(StyledBox)`
 `
 
 const StyledHeader = styled.h3``
+
+const P2 = styled(StyledP)`
+  margin: 30px auto;
+  max-width: 640px;
+`
 
 export default function IndexPage() {
   return (
@@ -57,12 +70,18 @@ export default function IndexPage() {
       
       <HeroSection alt="Game Pic" filename="screenshot_01.png" header="Jelly Dragon" />
 
-      <P>Some content</P>
+      <P2>Can you eat your way to the top? Fight, Jump, and Climb up the Jelly Dragon's tower using your sticky, sweet powers! Nom on grumpy jellies as you ascend to yummy victory!</P2>
 
       <StyledBox>
+        <StyledH1>Game Creators</StyledH1>
+
         <StyledBox2>
           <img src="/img/bitmoji_chris.png" />
           <StyledHeader>Chris Abrams</StyledHeader>
+        </StyledBox2>
+        <StyledBox2>
+          <img src="/img/headshot_james.png" />
+          <StyledHeader>James Burns</StyledHeader>
         </StyledBox2>
       </StyledBox>
 
