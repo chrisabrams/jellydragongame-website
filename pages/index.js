@@ -28,6 +28,7 @@ const StyledBox = styled.div`
 `
 
 const StyledBox2 = styled(StyledBox)`
+  align-content: flex-start;
   margin-right: 32px;
   width: 210px;
   max-width: 210px;
@@ -35,6 +36,7 @@ const StyledBox2 = styled(StyledBox)`
   img {
     display: flex;
     flex: 1 1 100%;
+    height: 200px;
 
     width: 210px;
     max-width: 210px;
@@ -46,6 +48,15 @@ const StyledBox2 = styled(StyledBox)`
     justify-content: center;
     width: 200px;
     max-width: 200px;
+  }
+
+  p {
+    display: flex;
+    flex: 1 1 100%;
+  }
+
+  a {
+    margin-left: 6px;
   }
 `
 
@@ -81,6 +92,7 @@ export default function IndexPage() {
         <StyledBox2>
           <img src="/img/bitmoji_chris.png" />
           <StyledHeader>Chris Abrams</StyledHeader>
+          <P>Link: <a href="https://twitter.com/_chrisabrams_" target="_new">Social</a></P>
           <P>Originated from a small east Texas town, Texas A&amp;M alum, father of two. Day job is crypto, night job is Unity.</P>
         </StyledBox2>
         <StyledBox2>
@@ -91,6 +103,7 @@ export default function IndexPage() {
         <StyledBox2>
           <img src="/img/headshot_james.png" />
           <StyledHeader>James Burns</StyledHeader>
+          <P>Link: <a href="https://www.facebook.com/profile.php?id=100009255309854" target="_new">Social</a></P>
           <P>Journeying from a small rural community in Appalachia. From door-to-door sales in high school, to a Fortune 500 industrial company, to my current software studies- I've been aggressively pursuing the American Dream.</P>
         </StyledBox2>
       </StyledBox>
