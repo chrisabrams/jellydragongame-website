@@ -67,6 +67,12 @@ const P2 = styled(StyledP)`
   max-width: 640px;
 `
 
+const P3 = styled.p`
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+`
+
 export default function IndexPage() {
   return (
     <Container>
@@ -106,6 +112,11 @@ export default function IndexPage() {
           <P>Link: <a href="https://www.facebook.com/profile.php?id=100009255309854" target="_new">Social</a></P>
           <P>Journeying from a small rural community in Appalachia. From door-to-door sales in high school, to a Fortune 500 industrial company, to my current software studies- I've been aggressively pursuing the American Dream.</P>
         </StyledBox2>
+      </StyledBox>
+
+      <StyledBox>
+        <StyledH1>Composer</StyledH1>
+        <P3>Michelle Lugo</P3>
       </StyledBox>
 
       <StyledBox>
